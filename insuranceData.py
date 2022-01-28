@@ -3,7 +3,7 @@
 #
 #Preparing Data Sets
 import csv, os
-# os.system('clear')
+os.system('clear')
 
 file = open('insurance_data - insurance.csv')
 insuranceFile = csv.reader(file)
