@@ -2,7 +2,7 @@
 # 02/08/2022 
 
 #Create word lists
-import os, random, requests, json
+import os, random, requests, json, sys
 
 os.system('clear')
 word=""
@@ -86,8 +86,11 @@ while gameOn:
             print("_", end=" ")
     if tries >6:
         print("\n Sorry run out chances ")
+        sys.exit()
         #playGame() ask if they want to play again
     if countLetter == len(word):
         print ("\nyou guessed! ")
         #Calculate score
+        scores = json.dumps(tries)
+        sys.exit()
         #playGame()
