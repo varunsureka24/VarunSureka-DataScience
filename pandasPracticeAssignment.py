@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 import pandas as pd 
+import os
+os.system('clear')
 
 #Store DF
 StoreListColumns = ['Product ID', 'Product Name', 'Color']
@@ -11,7 +14,7 @@ WardrobeList = [[1,'T-Shirt', 'Blue'],[2,'T-Shirt','Green'],[3,'skirt','red'],[4
 df1 = pd.DataFrame(WardrobeList, columns= WardrobeColumns)
 
 #Insurance Data
-InsuranceDF = pd.read_csv('insurance_data - insurance.csv')
+InsuranceDF = pd.read_csv('insurance_data.csv')
 
 InsuranceDF['sex'].replace(to_replace = 'female', value = 0,inplace=True)
 InsuranceDF['sex'].replace(to_replace = 'male', value = 1,inplace=True)
