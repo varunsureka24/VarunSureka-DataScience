@@ -2,7 +2,6 @@ import numpy as np
 import os
 from numpy import pi
 
-from pyrsistent import v
 os.system('clear')
 
 np.zeros((3, 4))
